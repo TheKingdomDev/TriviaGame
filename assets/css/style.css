@@ -1,0 +1,27 @@
+body {
+	background-image: url("../images/starwarsbackground.jpg");
+	background-color: black;
+
+}
+
+.container {
+	text-align: center;
+	margin-top: 40px; 
+}
+
+#press-start {
+	background-color: black;
+	color: white;
+	font-size: 32px;
+	font-family: 'Exo', sans-serif;
+}
+
+.panel body {
+	background-color: black;
+	color: white;
+}
+
+#qspace {
+	font-size: 32px;
+	font-family: 'Exo', sans-serif;
+}

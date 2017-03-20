@@ -71,7 +71,7 @@ var game = {
 		//print the question to the screen
 		$("#qspace").append('<p id="question">' + displayQ + '. ' + this.questions[this.currentQ] + '</p>');
 
-		//need a loop for each of the answers, to basically loop through and print all four answers to the screen.
+		//need a loop for each of the answers, to basically loop through and print all four answers to the screen (reference the game object current question).
 		for(var i = 0; i < 4; i++)
   		{
   			if(i===0)
