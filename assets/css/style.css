@@ -24,4 +24,5 @@ body {
 #qspace {
 	font-size: 32px;
 	font-family: 'Exo', sans-serif;
+	cursor: pointer;
 }

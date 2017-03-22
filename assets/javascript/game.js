@@ -19,7 +19,7 @@
 
 //Document.ready - 
 $(document).ready(function () {
-//variables for time limit and number of answers
+//variables for time limit and when you answer
 var questionTime = 30;
 var answer = 4;
 
@@ -48,7 +48,7 @@ var game = {
 				["Kessel Run", "The Gauntlet", "Boonta Eve Classic", "Mar Dan Run"]
 			],
 	//array of gifs to access on the correct, incorrect, unanswered, start, and game over screens
-	gifs: ["tatooine.gif", "jangofett.gif", "admiralakbar.gif", "bailorgana.gif", "quigongin.gif", "tauntaun.gif", "milleniumfalcon.gif"],
+	gifs: ["tatooine.gif", "jangofett.gif", "admiralakbar.gif", "bailorgana.gif", "quigongin.gif", "tauntaun.gif", "falcon.gif"],
 	//array of correct answer index
 	key: [3, 2, 0, 1, 2, 1, 0],
 	//always start at the first question
@@ -72,6 +72,7 @@ var game = {
 		$("#qspace").append('<p id="question">' + displayQ + '. ' + this.questions[this.currentQ] + '</p>');
 
 		//need a loop for each of the answers, to basically loop through and print all four answers to the screen (reference the game object current question).
+    //also creating a id for each of the answer blocks to reference when the player clicks on them.
 		for(var i = 0; i < 4; i++)
   		{
   			if(i===0)
